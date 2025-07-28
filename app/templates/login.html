@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h2>Login</h2>
+  {% if msg == "already_registered" %}
+    <p style="color:red;">Email already registered—please login below.</p>
+  {% elif msg == "need_set_password" %}
+    <p style="color:red;">You still need to set your password first.</p>
+  {% endif %}
+  <form action="/login" method="post">
+    <input type="email" name="email" placeholder="Your email" required>
+    <input type="password" name="password" placeholder="Your password" required>
+    <button type="submit">Login</button>
+  </form>
+  <p><a href="/change-password">Forgot / Change Password?</a></p>
+</body>
+</html>
