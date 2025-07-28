@@ -114,10 +114,6 @@ User can change password securely
 
 All passwords are hashed using bcrypt via passlib. Temporary codes ensure only verified users can proceed.
 
-📸 UI Screenshot Placeholder
-
-(Replace with real screenshot or remove this section if not needed)
-
 📜 License
 Licensed under the MIT License.
 Use freely for learning, experimentation, or enhancement.
